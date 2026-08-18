@@ -44,7 +44,7 @@ data:
           "targets": [
             {
               "datasource": { "type": "prometheus", "uid": "prometheus" },
-              "expr": "http_requests_created",
+              "expr": "http_requests_created * 1000",
               "legendFormat": "{{ "{{" }} method {{ "}}" }}",
               "refId": "A"
             }
